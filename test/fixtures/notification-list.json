@@ -1,0 +1,17 @@
+{
+  "notifications": [
+    {
+      "body": "probe body",
+      "created_at": "2026-10-16T17:41:43Z",
+      "id": "FADF4342-4B90-4961-8337-01AF374F79DD",
+      "is_read": false,
+      "subtitle": "",
+      "surface_id": "F3F56EF5-63D6-4E06-8631-4A2418E4AFBE",
+      "surface_ref": "surface:1000010002",
+      "tab_title": "cd /Users/dev/projects/demo && ./probe2.sh",
+      "title": "MC probe",
+      "workspace_id": "EDF95414-E12A-4B53-9289-1CD1A03B3CEC",
+      "workspace_ref": "workspace:1000010002"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "items": [
+    {
+      "created_at": "2026-10-16T17:41:32Z",
+      "cwd": "/Users/dev/projects/demo",
+      "id": "D65F7ED9-A1B5-4D9A-97FC-A62A13BA1E20",
+      "kind": "sessionStart",
+      "source": "claude",
+      "status": "telemetry",
+      "updated_at": "2026-10-16T17:41:32Z",
+      "workstream_id": "cmux-feed-v1:Y2xhdWRl:bWMtcHJvYmUtNTgyODc="
+    },
+    {
+      "created_at": "2026-10-16T17:41:32Z",
+      "cwd": "/Users/dev/projects/demo",
+      "id": "D29E5C2D-9E5C-4E37-B2F1-CBC951AB3BC0",
+      "kind": "userPrompt",
+      "source": "claude",
+      "status": "telemetry",
+      "text": "Probe prompt: list files",
+      "updated_at": "2026-10-16T17:41:32Z",
+      "workstream_id": "cmux-feed-v1:Y2xhdWRl:bWMtcHJvYmUtNTgyODc="
+    },
+    {
+      "created_at": "2026-10-16T17:41:33Z",
+      "cwd": "/Users/dev/projects/demo",
+      "id": "12BBD6C6-1B4C-410B-A67F-76552624896D",
+      "kind": "toolUse",
+      "source": "claude",
+      "status": "telemetry",
+      "title": "Bash",
+      "tool_input": "{\"command\":\"ls\"}",
+      "tool_name": "Bash",
+      "updated_at": "2026-10-16T17:41:33Z",
+      "workstream_id": "cmux-feed-v1:Y2xhdWRl:bWMtcHJvYmUtNTgyODc="
+    },
+    {
+      "created_at": "2026-10-16T17:41:33Z",
+      "cwd": "/Users/dev/projects/demo",
+      "id": "3595C860-DA76-46BB-902B-DB96DEF6290F",
+      "kind": "permissionRequest",
+      "request_id": "3799F49E-0DE7-4EEC-A021-9B2759FC479D",
+      "source": "claude",
+      "status": "pending",
+      "title": "Bash",
+      "tool_input": "{\"command\":\"rm -rf build\"}",
+      "tool_name": "Bash",
+      "updated_at": "2026-10-16T17:41:33Z",
+      "workstream_id": "cmux-feed-v1:Y2xhdWRl:bWMtcHJvYmUtNTgyODc="
+    }
+  ]
+}

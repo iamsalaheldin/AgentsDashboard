@@ -1,0 +1,165 @@
+{
+  "authority": "read_only_projection",
+  "items": [
+    {
+      "agents": [],
+      "attention": [],
+      "cwd": "/Users/dev",
+      "durable_surface_id": "77237029-88CF-4EBF-BE57-1998E7ACF863",
+      "evidence": [
+        {
+          "observed_at": "2026-10-16T17:41:35Z",
+          "owner": "SurfaceCatalog",
+          "reference": "local/terminal/565707CD-7995-462B-A13A-19E0FCE36BD5"
+        },
+        {
+          "observed_at": "2026-10-16T17:41:35Z",
+          "owner": "Workspace.sidebarMetadata",
+          "reference": "4BA3357B-5BAD-41B1-8D1D-63A601F91F57"
+        }
+      ],
+      "freshness": {
+        "observed_at": "2026-10-16T17:41:35Z",
+        "state": "current"
+      },
+      "kind": "terminal",
+      "label": "~",
+      "lifecycle": "running",
+      "omitted": {
+        "agents": 0,
+        "attention": 0,
+        "project_hints": 0,
+        "projections": 0,
+        "pull_requests": 0,
+        "receipt_refs": 0,
+        "repository_hints": 0
+      },
+      "placement": {
+        "kind": "local",
+        "machine": "local"
+      },
+      "possible_human_obligations": [],
+      "project_hints": [],
+      "projections": [
+        {
+          "panel_id": "565707CD-7995-462B-A13A-19E0FCE36BD5",
+          "resource_ref": "local/terminal/565707CD-7995-462B-A13A-19E0FCE36BD5",
+          "stable_surface_id": "77237029-88CF-4EBF-BE57-1998E7ACF863",
+          "stable_workspace_id": "9DA78230-5B5B-4BDC-AC67-8696DC881403",
+          "workspace_id": "4BA3357B-5BAD-41B1-8D1D-63A601F91F57"
+        }
+      ],
+      "pull_requests": [],
+      "receipt_refs": [],
+      "repository_hints": [],
+      "resource_ref": "local/terminal/565707CD-7995-462B-A13A-19E0FCE36BD5"
+    },
+    {
+      "agents": [
+        {
+          "evidence": {
+            "observed_at": "2026-10-16T17:41:35Z",
+            "owner": "AgentChatSessionRegistry",
+            "reference": "claude/mc-probe-58287@4"
+          },
+          "has_hook_lifecycle_state": true,
+          "kind": "claude",
+          "last_activity_at": "2026-10-16T17:41:33Z",
+          "session_id": "mc-probe-58287",
+          "state": "needs_input",
+          "version": 4
+        }
+      ],
+      "attention": [
+        {
+          "evidence": {
+            "observed_at": "2026-10-16T17:41:35Z",
+            "owner": "AgentChatSessionRegistry",
+            "reference": "claude/mc-probe-58287@4"
+          },
+          "kind": "needs_input",
+          "scope": "agent"
+        }
+      ],
+      "cwd": "/Users/dev/projects/demo",
+      "durable_surface_id": "B75FCCAD-335A-4D25-9982-2F91386D87D9",
+      "evidence": [
+        {
+          "observed_at": "2026-10-16T17:41:35Z",
+          "owner": "SurfaceCatalog",
+          "reference": "local/terminal/F3F56EF5-63D6-4E06-8631-4A2418E4AFBE"
+        },
+        {
+          "observed_at": "2026-10-16T17:41:35Z",
+          "owner": "Workspace.sidebarMetadata",
+          "reference": "EDF95414-E12A-4B53-9289-1CD1A03B3CEC"
+        }
+      ],
+      "freshness": {
+        "observed_at": "2026-10-16T17:41:35Z",
+        "state": "current"
+      },
+      "kind": "terminal",
+      "label": "cd /Users/dev/projects/demo && ./probe2.sh",
+      "lifecycle": "running",
+      "omitted": {
+        "agents": 0,
+        "attention": 0,
+        "project_hints": 0,
+        "projections": 0,
+        "pull_requests": 0,
+        "receipt_refs": 0,
+        "repository_hints": 0
+      },
+      "placement": {
+        "kind": "local",
+        "machine": "local"
+      },
+      "possible_human_obligations": [
+        {
+          "evidence": {
+            "observed_at": "2026-10-16T17:41:35Z",
+            "owner": "AgentChatSessionRegistry",
+            "reference": "claude/mc-probe-58287@4"
+          },
+          "freshness": {
+            "observed_at": "2026-10-16T17:41:35Z",
+            "reason": "hook_state_observed_without_liveness_timestamp",
+            "state": "unknown"
+          },
+          "kind": "needs_input",
+          "possible_human_obligation": true
+        }
+      ],
+      "project_hints": [],
+      "projections": [
+        {
+          "panel_id": "F3F56EF5-63D6-4E06-8631-4A2418E4AFBE",
+          "resource_ref": "local/terminal/F3F56EF5-63D6-4E06-8631-4A2418E4AFBE",
+          "stable_surface_id": "B75FCCAD-335A-4D25-9982-2F91386D87D9",
+          "stable_workspace_id": "11DB62DD-07AD-4098-9838-594916B87F59",
+          "workspace_id": "EDF95414-E12A-4B53-9289-1CD1A03B3CEC"
+        }
+      ],
+      "pull_requests": [],
+      "receipt_refs": [],
+      "repository_hints": [],
+      "resource_ref": "local/terminal/F3F56EF5-63D6-4E06-8631-4A2418E4AFBE"
+    }
+  ],
+  "observed_at": "2026-10-16T17:41:35Z",
+  "owner_availability": {
+    "agent_sessions": "available",
+    "cloud_state": "cached_only",
+    "pull_requests": "workspace_summary_only"
+  },
+  "schema_version": 1,
+  "total_observed": 2,
+  "truncated": false,
+  "unsupported_facts": [
+    "durable_work_identity",
+    "review_threads",
+    "check_runs",
+    "review_dispositions"
+  ]
+}

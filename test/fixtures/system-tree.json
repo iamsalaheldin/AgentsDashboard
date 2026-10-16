@@ -1,0 +1,131 @@
+{
+  "active": {
+    "is_browser_surface": false,
+    "pane_id": "485CBA8F-FD13-4889-ADD8-C3C0D2C04310",
+    "pane_ref": "pane:1000010000",
+    "surface_id": "565707CD-7995-462B-A13A-19E0FCE36BD5",
+    "surface_ref": "surface:1000010000",
+    "surface_type": "terminal",
+    "tab_id": "565707CD-7995-462B-A13A-19E0FCE36BD5",
+    "tab_ref": "tab:1000010000",
+    "window_id": "C4F31422-8427-4C89-A8D4-34F0F09148D0",
+    "window_ref": "window:1000010000",
+    "workspace_id": "4BA3357B-5BAD-41B1-8D1D-63A601F91F57",
+    "workspace_ref": "workspace:1000010000"
+  },
+  "caller": null,
+  "windows": [
+    {
+      "id": "C4F31422-8427-4C89-A8D4-34F0F09148D0",
+      "index": 0,
+      "key": false,
+      "ref": "window:1000010000",
+      "selected_workspace_id": "4BA3357B-5BAD-41B1-8D1D-63A601F91F57",
+      "selected_workspace_ref": "workspace:1000010000",
+      "visible": true,
+      "workspace_count": 2,
+      "workspaces": [
+        {
+          "description": null,
+          "id": "4BA3357B-5BAD-41B1-8D1D-63A601F91F57",
+          "index": 0,
+          "layout": {
+            "pane": {
+              "id": "485CBA8F-FD13-4889-ADD8-C3C0D2C04310",
+              "ref": "pane:1000010000"
+            }
+          },
+          "panes": [
+            {
+              "focused": true,
+              "id": "485CBA8F-FD13-4889-ADD8-C3C0D2C04310",
+              "index": 0,
+              "ref": "pane:1000010000",
+              "selected_surface_id": "565707CD-7995-462B-A13A-19E0FCE36BD5",
+              "selected_surface_ref": "surface:1000010000",
+              "surface_count": 1,
+              "surface_ids": [
+                "565707CD-7995-462B-A13A-19E0FCE36BD5"
+              ],
+              "surface_refs": [
+                "surface:1000010000"
+              ],
+              "surfaces": [
+                {
+                  "focused": true,
+                  "id": "565707CD-7995-462B-A13A-19E0FCE36BD5",
+                  "index": 0,
+                  "index_in_pane": 0,
+                  "pane_id": "485CBA8F-FD13-4889-ADD8-C3C0D2C04310",
+                  "pane_ref": "pane:1000010000",
+                  "ref": "surface:1000010000",
+                  "render_health": "rendering",
+                  "selected": true,
+                  "selected_in_pane": true,
+                  "title": "~",
+                  "tty": "ttys000",
+                  "type": "terminal",
+                  "url": null
+                }
+              ]
+            }
+          ],
+          "pinned": false,
+          "ref": "workspace:1000010000",
+          "selected": true,
+          "title": "~"
+        },
+        {
+          "description": null,
+          "id": "107B0C9A-C25E-422F-A0A8-D6CCC24A9770",
+          "index": 1,
+          "layout": {
+            "pane": {
+              "id": "EF80DE4E-247B-490D-9D9D-822B6819E312",
+              "ref": "pane:1000010001"
+            }
+          },
+          "panes": [
+            {
+              "focused": true,
+              "id": "EF80DE4E-247B-490D-9D9D-822B6819E312",
+              "index": 0,
+              "ref": "pane:1000010001",
+              "selected_surface_id": "EA439E5F-6770-44F9-861C-84A2650F8712",
+              "selected_surface_ref": "surface:1000010001",
+              "surface_count": 1,
+              "surface_ids": [
+                "EA439E5F-6770-44F9-861C-84A2650F8712"
+              ],
+              "surface_refs": [
+                "surface:1000010001"
+              ],
+              "surfaces": [
+                {
+                  "focused": true,
+                  "id": "EA439E5F-6770-44F9-861C-84A2650F8712",
+                  "index": 0,
+                  "index_in_pane": 0,
+                  "pane_id": "EF80DE4E-247B-490D-9D9D-822B6819E312",
+                  "pane_ref": "pane:1000010001",
+                  "ref": "surface:1000010001",
+                  "render_health": "not_started",
+                  "selected": true,
+                  "selected_in_pane": true,
+                  "title": "Terminal",
+                  "tty": "ttys002",
+                  "type": "terminal",
+                  "url": null
+                }
+              ]
+            }
+          ],
+          "pinned": false,
+          "ref": "workspace:1000010001",
+          "selected": false,
+          "title": "Terminal"
+        }
+      ]
+    }
+  ]
+}

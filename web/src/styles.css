@@ -1,0 +1,152 @@
+@import 'tailwindcss';
+@import '@fontsource-variable/inter';
+@import '@fontsource-variable/jetbrains-mono';
+
+/* Design tokens. Dark charcoal/green surfaces, emerald accent, reserved status hues. */
+@theme {
+  --font-sans: 'Inter Variable', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono Variable', ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  --color-bg: #0b0f0e;
+  --color-panel: #101614;
+  --color-panel-2: #141b18;
+  --color-raised: #18211d;
+  --color-line: #1d2824;
+  --color-line-strong: #2a3833;
+  --color-ink: #e4ebe7;
+  --color-ink-2: #a6b4ad;
+  --color-ink-3: #75847d;
+
+  --color-accent: #34d399;
+  --color-accent-strong: #10b981;
+  --color-accent-dim: #0f3d2e;
+
+  /* Status: each ships with an icon + label in the UI, never color alone. */
+  --color-st-working: #34d399;
+  --color-st-attention: #f5b843;
+  --color-st-error: #f87171;
+  --color-st-idle: #94a3b8;
+  --color-st-ended: #5b6762;
+  --color-st-unknown: #b4a7f5;
+  --color-st-info: #60a5fa;
+}
+
+@layer base {
+  html,
+  body,
+  #root {
+    height: 100%;
+  }
+  body {
+    background: var(--color-bg);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-size: 13px;
+    -webkit-font-smoothing: antialiased;
+  }
+  ::selection {
+    background: color-mix(in oklab, var(--color-accent) 35%, transparent);
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-line-strong) transparent;
+  }
+}
+
+@layer components {
+  .panel {
+    background: linear-gradient(180deg, var(--color-panel-2), var(--color-panel));
+    border: 1px solid var(--color-line);
+    border-radius: 12px;
+  }
+  .label-mono {
+    font-family: var(--font-mono);
+    letter-spacing: 0.01em;
+  }
+  .eyebrow {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--color-ink-3);
+  }
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    height: 28px;
+    padding: 0 10px;
+    border-radius: 7px;
+    border: 1px solid var(--color-line-strong);
+    background: var(--color-panel-2);
+    color: var(--color-ink);
+    font-size: 12px;
+    transition:
+      border-color 120ms,
+      background 120ms,
+      box-shadow 120ms;
+  }
+  .btn:hover:not(:disabled) {
+    border-color: color-mix(in oklab, var(--color-accent) 55%, var(--color-line-strong));
+    box-shadow: 0 0 0 3px color-mix(in oklab, var(--color-accent) 10%, transparent);
+  }
+  .btn:disabled {
+    opacity: 0.45;
+    cursor: not-allowed;
+  }
+  .btn-accent {
+    border-color: color-mix(in oklab, var(--color-accent) 50%, transparent);
+    background: color-mix(in oklab, var(--color-accent) 12%, var(--color-panel));
+    color: var(--color-accent);
+  }
+  .input {
+    height: 30px;
+    border-radius: 8px;
+    border: 1px solid var(--color-line-strong);
+    background: var(--color-bg);
+    color: var(--color-ink);
+    padding: 0 10px;
+    font-size: 12px;
+  }
+  .input::placeholder {
+    color: var(--color-ink-3);
+  }
+  .nav-active {
+    background: linear-gradient(90deg, color-mix(in oklab, var(--color-accent) 14%, transparent), transparent 85%);
+    box-shadow: inset 2px 0 0 var(--color-accent);
+    color: var(--color-ink);
+  }
+  .row-hover:hover {
+    background: color-mix(in oklab, var(--color-accent) 4%, transparent);
+  }
+  .stale-dim {
+    opacity: 0.55;
+    filter: saturate(0.4);
+    transition:
+      opacity 200ms,
+      filter 200ms;
+  }
+}
+
+@keyframes pulse-dot {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.35;
+  }
+}
+.pulse {
+  animation: pulse-dot 1.6s ease-in-out infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .pulse {
+    animation: none;
+  }
+}
